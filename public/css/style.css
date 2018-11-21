@@ -1,0 +1,305 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html {
+  overflow-y: auto;
+  line-height: normal;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  height: 100%; }
+
+body {
+  min-height: 100%;
+  background-color: #fff;
+  text-rendering: optimizeLegibility;
+  -webkit-text-decoration-skip: objects;
+          text-decoration-skip: objects;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent; }
+
+:focus {
+  outline: none; }
+
+html,
+form,
+body,
+section,
+iframe,
+figure,
+ul,
+ol,
+table td,
+blockquote,
+p,
+dl,
+input,
+textarea,
+button,
+optgroup,
+select {
+  margin: 0;
+  padding: 0; }
+
+ul,
+ol {
+  list-style-type: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+th {
+  font-weight: inherit; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit; }
+
+audio,
+video,
+main {
+  display: block; }
+
+img,
+table,
+iframe,
+.btn,
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  border: none; }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit; }
+
+:disabled,
+.disabled {
+  cursor: not-allowed; }
+
+select,
+input,
+textarea,
+button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  cursor: pointer;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  text-decoration: none; }
+
+.button,
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: inherit; }
+
+/*=== Lato ===*/
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/Lato.eot");
+  src: url("../fonts/Lato/Lato.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/Lato.woff2") format("woff2"), url("../fonts/Lato/Lato.woff") format("woff"), url("../fonts/Lato/Lato.ttf") format("truetype"), url("../fonts/Lato/Lato.svg#Lato") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/*=== /Lato ===*/
+/*=== Lato Light ===*/
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/LatoLight.eot");
+  src: url("../fonts/Lato/LatoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/LatoLight.woff2") format("woff2"), url("../fonts/Lato/LatoLight.woff") format("woff"), url("../fonts/Lato/LatoLight.ttf") format("truetype"), url("../fonts/Lato/LatoLight.svg#LatoLight") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+/*=== /Lato Light ===*/
+/*=== Lato Thin ===*/
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/LatoThin.eot");
+  src: url("../fonts/Lato/LatoThin.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/LatoThin.woff2") format("woff2"), url("../fonts/Lato/LatoThin.woff") format("woff"), url("../fonts/Lato/LatoThin.ttf") format("truetype"), url("../fonts/Lato/LatoThin.svg#LatoThin") format("svg");
+  font-weight: 100;
+  font-style: normal; }
+
+/*=== /OpenSans Thin ===*/
+header {
+  background: #212124;
+  padding: 1.5rem 0; }
+  header h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: center; }
+    @media only screen and (max-width: 580px) {
+      header h1 {
+        font-size: 1.5rem; } }
+
+.searchForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media only screen and (max-width: 580px) {
+    .searchForm {
+      display: block; } }
+
+.searchForm__button {
+  margin-left: auto;
+  background: #0063DC;
+  border-radius: 0 3px 3px 0;
+  height: 2.25rem;
+  line-height: 2.25rem;
+  color: #fff;
+  width: 10rem; }
+  .searchForm__button:hover {
+    background: #003576; }
+  @media only screen and (max-width: 580px) {
+    .searchForm__button {
+      width: 100%;
+      border-radius: 3px;
+      margin-bottom: 0.625rem; } }
+
+.searchForm__input {
+  width: calc( 100% - 10rem);
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  border-right: none;
+  border-radius: 3px 0 0 3px;
+  padding-left: 0.625rem;
+  height: 2.25rem;
+  line-height: 2.25rem; }
+  .searchForm__input:focus {
+    border-color: #0063DC; }
+  @media only screen and (max-width: 580px) {
+    .searchForm__input {
+      width: 100%;
+      border-radius: 3px;
+      margin-bottom: 0.625rem; } }
+  .searchForm__input.field_error {
+    border-color: #E21839; }
+
+.searchResult {
+  margin-top: 1.5rem; }
+
+.searchResult_quantity {
+  font-size: 0.875rem;
+  color: #0063DC;
+  font-weight: 300; }
+
+.searchResult_notFoundTitle {
+  color: #E21839;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: auto; }
+
+.searchResult_list {
+  margin: 0.625rem -0.3125rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%; }
+
+.searchResult_listItem {
+  position: relative;
+  overflow: hidden;
+  height: 10rem;
+  margin: 0 0.3125rem 0.625rem;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  width: calc(20% - 0.625rem); }
+  @media only screen and (max-width: 580px) {
+    .searchResult_listItem {
+      width: calc(100% - 0.625rem);
+      max-width: 20rem;
+      margin: 0 auto 0.625rem; } }
+  @media only screen and (min-width: 580.0625px) and (max-width: 990px) {
+    .searchResult_listItem {
+      width: calc(33.333% - 0.625rem); } }
+
+.searchResult_img {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.searchResult__button {
+  width: 10rem;
+  margin: 1.5rem auto 0;
+  background: #0063DC;
+  height: 2.25rem;
+  line-height: 2.25rem;
+  color: #fff;
+  display: block; }
+  .searchResult__button:hover {
+    background: #003576; }
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #212124;
+  padding: 0.9375rem 0; }
+
+.copyright {
+  text-align: center;
+  font-weight: 100;
+  font-size: 0.75rem;
+  color: #fff; }
+
+body {
+  background-color: #fff;
+  font-size: 1rem;
+  line-height: normal;
+  color: #212124;
+  font-family: "Lato";
+  font-weight: normal;
+  position: relative;
+  padding-bottom: 4.8125rem; }
+
+.mainContainer {
+  padding-top: 2rem;
+  height: 100%; }
+
+.container {
+  max-width: 64rem;
+  padding: 0 0.9375rem;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=style.css.map*/

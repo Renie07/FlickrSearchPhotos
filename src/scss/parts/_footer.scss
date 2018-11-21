@@ -1,0 +1,15 @@
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: $theme-color-main;
+  padding: 0.9375rem 0;
+}
+
+.copyright {
+  text-align: center;
+  font-weight: 100;
+  font-size: 0.75rem;
+  color: $theme-color-on-main;
+}

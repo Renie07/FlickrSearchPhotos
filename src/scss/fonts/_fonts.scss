@@ -1,0 +1,31 @@
+@mixin font-face($folder, $font-name, $font-weight: normal, $font-style: normal) {
+  src: url('../fonts/#{$folder}/#{$font-name}.eot');
+  src: url('../fonts/#{$folder}/#{$font-name}.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/#{$folder}/#{$font-name}.woff2') format('woff2'),
+  url('../fonts/#{$folder}/#{$font-name}.woff') format('woff'),
+  url('../fonts/#{$folder}/#{$font-name}.ttf') format('truetype'),
+  url('../fonts/#{$folder}/#{$font-name}.svg##{$font-name}') format('svg');
+  font-weight: $font-weight;
+  font-style: $font-style;
+}
+
+/*=== Lato ===*/
+@font-face {
+  font-family: 'Lato';
+  @include font-face('Lato', 'Lato');
+}
+/*=== /Lato ===*/
+
+/*=== Lato Light ===*/
+@font-face {
+  font-family: 'Lato';
+  @include font-face('Lato', 'LatoLight', 300);
+}
+/*=== /Lato Light ===*/
+
+/*=== Lato Thin ===*/
+@font-face {
+  font-family: 'Lato';
+  @include font-face('Lato', 'LatoThin', 100);
+}
+/*=== /OpenSans Thin ===*/

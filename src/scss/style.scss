@@ -1,0 +1,50 @@
+$body-bg: #fff;
+$theme-color-main: #212124;
+$theme-color-on-main: #fff;
+$theme-color-error: #E21839;
+
+$font-family-base: 'Lato';
+$font-weight-base: normal;
+
+$container-padding: 0.9375rem;
+
+$font-size-base: 1rem;
+$line-height-base: normal;
+
+$theme-color-link: #0063DC;
+$theme-color-on-link: #fff;
+$link-decoration: none;
+
+$button-darken-value: 20%;
+
+@import 'reset';
+@import 'mixins';
+@import 'fonts/fonts';
+
+@import 'parts/header';
+@import 'parts/searchForm';
+@import 'parts/searchResult';
+@import 'parts/footer';
+
+
+body {
+  background-color: $body-bg;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $theme-color-main;
+  font-family: $font-family-base;
+  font-weight: $font-weight-base;
+  position: relative;
+  padding-bottom: 4.8125rem;
+}
+
+.mainContainer {
+  padding-top: 2rem;
+  height: 100%;
+}
+
+.container {
+  max-width: 64rem;
+  padding: 0 $container-padding;
+  margin: 0 auto;
+}

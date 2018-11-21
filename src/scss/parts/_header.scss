@@ -1,0 +1,13 @@
+header {
+  background: $theme-color-main;
+  padding: 1.5rem 0;
+  h1 {
+    color: $theme-color-on-main;
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: center;
+    @include respond-to(handhelds) {
+      font-size: 1.5rem;
+    }
+  }
+}
